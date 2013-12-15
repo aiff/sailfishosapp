@@ -1,3 +1,12 @@
-
 import QtQuick 2.0
 import Sailfish.Silica 1.0
+page
+{
+   PullDownMenu {
+            MenuItem {
+                text: "Show Page 2"
+                onClicked: pageStack.push(Qt.resolvedUrl("SecondPage.qml"))
+            }
+        }
+
+}
